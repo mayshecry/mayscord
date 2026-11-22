@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <sys/select.h>
 #endif
-// this important
+// this important.
 void dc_internal_wipe(void *p, size_t n) {
     volatile unsigned char *v = (volatile unsigned char *)p;
     while (n--) *v++ = 0;
